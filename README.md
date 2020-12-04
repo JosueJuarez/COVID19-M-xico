@@ -1,6 +1,7 @@
 # COVID19 en México
 ------
 Actualizado: 29 de octubre 2020
+
 Fuente: https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico
 
 ~~~
@@ -53,32 +54,68 @@ memory usage: 685.8+ MB
 
 ## Casos acumulados confirmados positivos
 
-Los individuos considerados como positivos estan indicados por un valor de $1, 2, 3$ en la columna de CLASIFICACION_FINAL. En total van $912811$ confirmados.
+Los individuos considerados como positivos estan indicados por un valor de 1, 2, 3 en la columna de CLASIFICACION_FINAL. En total van 912811 confirmados.
 
 ![Casos positivos acumulados](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivosacum.png "Casos positivos acumulados")
 
 ### Por sexo
-Los positvivos confirmados los podemos agrupar por sexo. Un individuo femenino es representado en los datos por un $1$ y uno masculino por un $2$ en la columna de SEXO.
+Los positvivos confirmados los podemos agrupar por sexo. Un individuo femenino es representado en los datos por un 1 y uno masculino por un 2 en la columna de SEXO.
 
 ![Casos positivos acumulados por sexo](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivoscum-hm.png "Casos positivos acumulados por sexo")
+
 Se observa como la enfermedad no discrimina entre hombres ni mujeres.
 
 ### Por comorbilidades
-La base de datos provee información sobre las comorbilidades que un individuo pueda tener. Un valor de $1$ representa "Sí", y un valor de $2$ es un "No". Mientras que un valor de $98$ representa "SE IGNORA". Para estos casos se considera como un valor faltante.
+La base de datos provee información sobre las comorbilidades que un individuo pueda tener. Un valor de 1 representa "Sí", y un valor de $2$ es un "No". Mientras que un valor de 98 representa "SE IGNORA". Para estos casos se considera como un valor faltante.
 
 ![Casos positivos acumulados por comorbilidades](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivivos_comorbilidades.png "Casos positivos acumulados por comorbilidades")
+
 De las nueve comorbilidades de las que hay información, se observa que las más presentes entre los casos positivos son las de hipertensión, diabetes y obesidad.
 
 ### Por edades
 Un histograma es de utilidad para ver la distribución de la edad en los individuos infectados.
 
 ![Casos positivos acumulados por edad](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivos_edad.png "Casos positivos acumulados por edad")
-Por el perfil que se observa del histograma pareciera que la edad sigue una distribución normal centrada en la media de $44$ años, con una desviación estándar de $16$ años.
+
+Por el perfil que se observa del histograma pareciera que la edad sigue una distribución normal centrada en la media de 44 años, con una desviación estándar de 16 años.
 
 ### Por municipio
 En la dirección https://datos.covid-19.conacyt.mx/#DownZCSV, se tiene acceso a una base de datos que tiene registros de los casos diarios por municipio. Esta es de ayuda para poder visualizar como esta distribuida la epidemia geográficamente.
 
 ![Casos positivos por municipio](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/M%C3%A9xico.png "Casos positivos por municipio")
-Además de eso, también podemos visualizar tanto el desplazamiento geográfico y temporal:
+
+(Por alguna razón los conteos no coinciden con los de la otra base de datos.) Además de eso, también podemos visualizar tanto el desplazamiento geográfico y temporal:
+
 ![Desplazamiento geográfico y temporal](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/MapaNacional.gif "Desplazamiento geográfico y temporal")
+
 Se observa como la epidemia comienza en municipios con alta densidad poblacional y se esparce a los municipios vecinos.
+
+## Defunciones por casos acumulados confirmados positivos
+
+Las defunciones las obtenemos filtrando a los individuos con resultado positivo a COVID-19 y con fecha de defunción válida. A la fecha van 90773 defunciones acumuladas.
+
+![Defunciones por casos positivos](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defuncionescum.png "Defunciones por casos positivos")
+
+### Por sexo
+
+Filtrado de defunciones por sexo:
+
+![Defunciones filtrado por sexo](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defuncionescum-hm.png "Defunciones filtrado por sexo")
+
+Han fallecido al rededor de un 20% más de individuos masculinos debido a la enfermedad.
+
+## Por comorbilidades principales
+
+Filtrado por comorbilidades principales:
+
+![Defunciones filtradas por comorbilidades principales](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defunciones_comorbilidades.png "Defunciones filtradas por comorbilidades principales")
+
+Se hace más notable que las comorbilidades más presentes entre los individuos fallecidos debido a la enfermedad son las de hipertensión, diabetes y obesidad.
+
+## Por edad
+
+Filtrado por edad:
+
+![Defunciones filtradas por edades](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defunciones_comorbilidades.png "Defunciones filtradas por edades")
+
+Se sigue notando el perfil de la distribución normal, solamente que desplazada a una media de 62 años.
