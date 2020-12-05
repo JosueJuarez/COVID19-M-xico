@@ -1,4 +1,5 @@
 # COVID19 en México
+## Josué Júarez
 ------
 Actualizado: 29 de octubre 2020
 
@@ -72,7 +73,7 @@ La base de datos provee información sobre las comorbilidades que un individuo p
 
 De las nueve comorbilidades de las que hay información, se observa que las más presentes entre los casos positivos son las de hipertensión, diabetes y obesidad.
 
-### Por edades
+### Por edad
 Un histograma es de utilidad para ver la distribución de la edad en los individuos infectados.
 
 ![Casos positivos acumulados por edad](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivos_edad.png "Casos positivos acumulados por edad")
@@ -104,7 +105,7 @@ Filtrado de defunciones por sexo:
 
 Han fallecido al rededor de un 20% más de individuos masculinos debido a la enfermedad.
 
-## Por comorbilidades principales
+### Por comorbilidades principales
 
 Filtrado por comorbilidades principales:
 
@@ -112,10 +113,66 @@ Filtrado por comorbilidades principales:
 
 Se hace más notable que las comorbilidades más presentes entre los individuos fallecidos debido a la enfermedad son las de hipertensión, diabetes y obesidad.
 
-## Por edad
+### Por edad
 
 Filtrado por edad:
 
-![Defunciones filtradas por edades](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defunciones_comorbilidades.png "Defunciones filtradas por edades")
+![Defunciones filtradas por edades](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defunciones_edad.png "Defunciones filtradas por edades")
 
 Se sigue notando el perfil de la distribución normal, solamente que desplazada a una media de 62 años.
+
+
+# COVID19 en Veracruz
+Actualizado: 29 de octubre 2020
+
+Se filtran los casos con el número de estado (30) en la columna de "ENTIDAD_UM"
+
+## Casos acumulados confirmados positivos
+
+En total van 36123 confirmados.
+![Casos positivos acumulados en Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivosacum_ver.png "Casos positivos acumulados en Veracruz")
+
+### Por sexo
+
+![Casos positivos acumulados por sexo en Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivoscum-hm_ver.png "Casos positivos acumulados por sexo en Veracruz")
+
+### Por comorbilidades
+
+![Casos positivos acumulados por comorbilidades en Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivivos_comorbilidades_ver.png "Casos positivos acumulados por comorbilidades en Veracruz")
+
+### Por edad
+
+![Casos positivos acumulados por edad en Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/positivos_edad_ver.png "Casos positivos acumulados por edad en Veracruz")
+
+El perfil de la distribución normal se nota menos. En el estado la media esta centrada en 47 años.
+
+### Por municipio
+
+![Casos positivos por municipios de Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/Veracruz.png "Casos positivos por municipios de 
+Veracruz")
+
+(Por alguna razón los conteos no coinciden con los de la otra base de datos.)
+
+## Defunciones por casos acumulados confirmados positivos en Veracruz
+
+A la fecha van 90773 defunciones acumuladas.
+
+![Defunciones por casos positivos en Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defuncionescum_ver.png "Defunciones por casos positivos en Veracruz")
+
+### Por sexo
+
+![Defunciones filtrado por sexo en Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defuncionescum-hm.png "Defunciones filtrado por sexo en Veracruz")
+
+De igual manera ha fallecido un 20% más de individuos masculinos debido a la enfermedad.
+
+### Por comorbilidades principales
+
+![Defunciones filtradas por comorbilidades principales en Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defunciones_comorbilidades_ver.png "Defunciones filtradas por comorbilidades principales en Veracruz")
+
+Siguen estando las tres mismas comorbilidades presentes en los individuos fallecidos.
+
+### Por edad
+
+![Defunciones filtradas por edades en Veracruz](https://github.com/JosueJuarez/COVID19-M-xico/blob/main/Figuras/defunciones_edad_ver.png "Defunciones filtradas por edades en Veracruz")
+
+Se sigue notando el perfil de la distribución normal, solamente que desplazada a una media de 63 años.
